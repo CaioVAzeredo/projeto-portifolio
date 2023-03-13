@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header>h1 {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+/* menu */
+#burguer{
+    display: block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to bottom,  #4965ff,  #4d67ff,  #5a73ff,  #6a80ff,  #7a8eff ) ;
+    cursor: pointer;
+    padding: 15px;
+    
+    /* background-image: linear-gradient(to bottom,  #263dbd,  #263797,  #1a266b,  #182153,  #182153 ) ; */
+}
+#burguer:hover{
+   
+    background-image: linear-gradient(to bottom,  #3a57fd,  #3b58fd,  #4460fc,  #5871ff,  #647bff ) ;
+   
+    
+}
+
+#itens {
+    display: block;    
+}
+#itens > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+   background-color: #3a57fd;
+   text-decoration: none;
+   color: black;
+}
+#itens > ul > li > a:hover{
+    
+    background-color: #4557c0;
+    color: rgb(228, 228, 228);
+}

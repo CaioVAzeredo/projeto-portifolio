@@ -1,13 +1,17 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header>div>h1 {
     padding: 20px;
     text-align: center;
     background-color: white;
+    font-weight: bold;
 }
 
 /* menu */
@@ -53,6 +57,7 @@ header>div {
     padding: 10px;
     text-align: center;
     font-size: 1.2em;
+    font-weight: bold;
     background-color: #2243ff;
     text-decoration: none;
     color: black;
@@ -66,23 +71,63 @@ header>div {
 
 /* informacao */
 section#informacao {
-    height: 350px;
+    height: 655px;
     padding-top: 35px;
-    border: black 1px solid;
+    background-image: url(../imagens/DALL·E\ 2023-02-07\ 23.18.50\ -\ imagem\ tecnologia\ em\ azul\ em\ 1080p.png);
+    filter: opacity(100%);
 }
 
-#informacao>div#divInfo {
-    border: solid 1px black;
-    width: 80%;
+section#informacao>img#minhaImagem {
+    width: 324px;
     height: 300px;
     display: block;
     margin: 0 auto;
+    filter: grayscale(100%);
 }
 
-#informacao>div#sociais {
-    text-align: center;
-    border: solid 1px black;
-    width: 80%;
+#informacao>div#divInfo {
+    padding-top: 10px;
+    background-color: white;
+    width: 324px;
+    height: 280px;
     display: block;
     margin: 0 auto;
+}
+
+#informacao>div#divInfo>h1 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+#informacao>div#divInfo>h2 {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#informacao>div#divInfo>h3,
+#informacao>div#divInfo>p {
+    margin-left: 40px;
+}
+
+/* redes sociais */
+#informacao>div#sociais {
+    background-color: #0022e6;
+    text-align: center;
+    width: 324px;
+    display: block;
+    margin: 0 auto;
+}
+
+#informacao>div#sociais>a {
+    display: inline-block;
+    margin: auto;
+}
+
+#informacao>div#sociais>a>img {
+    margin: 5px;
+    height: 30px;
+}
+#informacao>div#sociais>a>img#wpp{
+    margin-left: 10px;
 }

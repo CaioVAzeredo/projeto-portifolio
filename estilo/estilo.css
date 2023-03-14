@@ -1,46 +1,88 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 
-header>h1 {
+header>div>h1 {
     padding: 20px;
     text-align: center;
     background-color: white;
 }
 
 /* menu */
-#burguer{
+header>div {
     display: block;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    background-image: linear-gradient(to bottom,  #4965ff,  #4d67ff,  #5a73ff,  #6a80ff,  #7a8eff ) ;
-    cursor: pointer;
-    padding: 15px;
-    
-    /* background-image: linear-gradient(to bottom,  #263dbd,  #263797,  #1a266b,  #182153,  #182153 ) ; */
+    margin: auto;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+
 }
-#burguer:hover{
-   
-    background-image: linear-gradient(to bottom,  #3a57fd,  #3b58fd,  #4460fc,  #5871ff,  #647bff ) ;
-   
-    
+
+#burguer {
+    color: black;
+    background-color: #1336fc;
+    border-radius: 10%;
+    padding: 15px;
+    width: 25px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: -50px;
+    text-align: center;
+
+}
+
+#burguer:hover {
+    color: white;
+    background-color: #4c66fc;
+    cursor: pointer;
+}
+
+#burguer:active {
+    background-color: #0022e6;
+    color: #000000;
 }
 
 #itens {
-    display: block;    
+    display: none;
 }
-#itens > ul > li > a{
+
+#itens>ul>li>a {
     display: block;
     padding: 10px;
     text-align: center;
     font-size: 1.2em;
-   background-color: #3a57fd;
-   text-decoration: none;
-   color: black;
+    background-color: #2243ff;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px black solid;
 }
-#itens > ul > li > a:hover{
-    
-    background-color: #4557c0;
-    color: rgb(228, 228, 228);
+
+#itens>ul>li>a:hover {
+    background-color: #5a72fc;
+    color: white;
+}
+
+/* informacao */
+section#informacao {
+    height: 350px;
+    padding-top: 35px;
+    border: black 1px solid;
+}
+
+#informacao>div#divInfo {
+    border: solid 1px black;
+    width: 80%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#informacao>div#sociais {
+    text-align: center;
+    border: solid 1px black;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
 }

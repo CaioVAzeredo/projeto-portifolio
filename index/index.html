@@ -12,8 +12,10 @@
 
 <body>
     <header>
-        <h1><strong>Caio V.Azeredo</strong></h1>
-        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <div>
+            <h1><strong>Caio V.Azeredo</strong></h1>
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        </div>
         <menu id="itens">
             <!-- https://www.youtube.com/watch?v=2GO_E3KMRVg -->
             <ul>
@@ -25,8 +27,8 @@
         </menu>
     </header>
     <main>
-        <section>
-            <div>
+        <section id="informacao">
+            <div id="divInfo">
                 <h1>CAIO VIANA DE AZEREDO</h1>
                 <h2>DESENVOLVEDOR DE SOFTWARE</h2>
                 <h3>Telefone:</h3>
@@ -44,7 +46,7 @@
                 <a href="#">whats app</a>
             </div>
         </section>
-        <section>
+        <section id="apresentacao">
             <h1>Olá, sou o Caio</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi enim quam dignissimos sit, perspiciatis
                 labore officiis assumenda eligendi consequuntur facilis voluptas, iure soluta sunt nulla sed cum? A, sed
@@ -101,8 +103,18 @@
     function clickMenu() {
         if (itens.style.display == 'block') {
             itens.style.display = 'none'
+            burguer.innerHTML = 'menu'
+            burguer.style.background = '#1336fc'
+            burguer.style.color = 'black'
+            burguer.style.border = 'none'
+
         }else{
             itens.style.display ='block'
+            burguer.innerHTML = 'close'
+            burguer.style.background = 'white'
+            burguer.style.color = '#1336fc'
+            burguer.style.border = 'solid 2px #1336fc'
+
         }
     }
 

@@ -100,6 +100,7 @@ section#informacao>img#minhaImagem {
 #informacao>div#divInfo>h1 {
     font-weight: bolder;
     text-align: center;
+    font-size: 1.4em;
 }
 
 #informacao>div#divInfo>h2 {
@@ -151,7 +152,11 @@ section#apresentacao>h1 {
 }
 
 /* curriculo */
-section#curriculo>H1 {
+section#curriculo {
+    margin-bottom: 50px;
+}
+
+section#curriculo>h1 {
     text-align: center;
 }
 
@@ -159,14 +164,72 @@ section#curriculo>h1 {
     margin: 20px;
 }
 
-section#curriculo>p,
-section#curriculo>strong {
-    margin: 20px;
-}
-section#curriculo>p{
 
+section#curriculo>ul>strong>li,
+section#curriculo>ul>li,
+section#curriculo>ul>p {
+    
+    margin-left: 20%;
 }
 
 section#curriculo>hr {
     margin-bottom: 40px;
+}
+
+/* footer */
+footer {
+    padding-top: 20px;
+    background-color: rgb(235, 232, 232);
+    padding-bottom: 30px;
+}
+
+footer>h1 {
+
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+footer>h2 {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+footer>p,
+footer>h3 {
+    text-align: center;
+
+}
+
+footer>hr {
+    margin-top: 30px;
+
+}
+
+/* sociais footer */
+div#sociais {
+
+    background-color: #0022e6;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+
+}
+
+div#sociais>a {
+    display: inline-block;
+    margin: auto;
+}
+
+div#sociais>a>img {
+    margin: 5px;
+    height: 30px;
+}
+
+div#sociais>a>img#wpp {
+    margin-left: 10px;
+}
+div#sociais>p {
+    color: black;
 }

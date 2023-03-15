@@ -78,6 +78,7 @@ section#informacao {
 }
 
 section#informacao>img#minhaImagem {
+    border-radius: 10px 10px 0px 0px ;
     width: 324px;
     height: 300px;
     display: block;
@@ -86,6 +87,7 @@ section#informacao>img#minhaImagem {
 }
 
 #informacao>div#divInfo {
+ 
     padding-top: 10px;
     background-color: white;
     width: 324px;
@@ -117,6 +119,7 @@ section#informacao>img#minhaImagem {
     width: 324px;
     display: block;
     margin: 0 auto;
+    border-radius: 0px 0px 10px 10px;
 }
 
 #informacao>div#sociais>a {
@@ -129,5 +132,25 @@ section#informacao>img#minhaImagem {
     height: 30px;
 }
 #informacao>div#sociais>a>img#wpp{
-    margin-left: 10px;
+    margin-left: 20px;
 }
+
+/* apresentacao */
+section#apresentacao{
+    margin: 15px;
+    margin-top: 35px;
+}
+
+section#apresentacao > h1{
+    margin-bottom: 10px;
+}
+section#apresentacao > h1,
+section#apresentacao > p{
+    text-align: center;
+}
+/* curriculo */
+section#curriculo{
+    
+}
+
+

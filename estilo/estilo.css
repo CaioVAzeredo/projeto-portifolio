@@ -5,7 +5,11 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
+    color: #000e5e;
+}
 
+hr {
+    color: #000e5e;
 }
 
 header>div>h1 {
@@ -66,6 +70,7 @@ header>div {
 }
 
 #itens>ul>li>a:hover {
+    transition: .2s;
     background-color: #5a72fc;
     color: white;
 }
@@ -176,6 +181,73 @@ section#curriculo>hr {
     margin-bottom: 40px;
 }
 
+/* form */
+form {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+}
+
+form>label {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #000e5e;
+}
+
+form>label#nome {
+    margin-top: 0px;
+}
+
+form>input,
+form>textarea {
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px;
+    width: 300px;
+    font-size: 1.2em;
+    background-color: #1437ff;
+    border: none;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+button:hover {
+    color: #000e5e;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #000e5e;
+    transition: .2s;
+}
+
+input {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 10px;
+    border: #000e5e 2px solid;
+    border-radius: 10px;
+}
+
+
+form>textarea {
+    background-color: #d3d9fd;
+    padding: 10px;
+    border: #000e5e 2px solid;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+}
+
 /* footer */
 footer {
     padding-top: 20px;
@@ -199,7 +271,6 @@ footer>h2 {
 footer>p,
 footer>h3 {
     text-align: center;
-
 }
 
 footer>hr {
@@ -240,10 +311,43 @@ div#sociais>p {
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #burguer {
         display: none;
-    
-    }
-    #itens{
-        display: block;
     }
 
+    #itens {
+        background-color: #2243ff;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #itens>ul>li {
+        display: inline-block;
+        border-bottom: 0px;
+    }
+
+    #itens>ul>li>a {
+        display: inline-block;
+        border-bottom: 0px black solid;
+    }
+
+    /* form */
+form > label{
+    font-size: 1.3em;
+}
+    input {
+        background-color: #b0bcfc;
+        width: 600px;
+        padding: 10px;
+        border: #000e5e 2px solid;
+        border-radius: 10px;
+    }
+
+    form>textarea {
+        background-color: #b0bcfc;
+        padding: 10px;
+        border: #000e5e 2px solid;
+        border-radius: 10px;
+        width: 600px;
+        height: 150px;
+    }
 }

@@ -10,11 +10,11 @@
     <title>Meu portifólio</title>
 </head>
 
-<body onresize="tela()">
+<body>
     <header>
         <div>
             <h1><strong>Caio V.Azeredo</strong></h1>
-            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <span id="burguer" class="material-icons">menu</span>
         </div>
         <menu id="itens">
             <!-- https://www.youtube.com/watch?v=2GO_E3KMRVg -->
@@ -115,12 +115,20 @@
             </ul>
             <h1>CONTATO</h1>
             <hr>
-            <form action="#">
-                <p><label for="itexto">Nome:</label> <input type="text" name="texto" id="itexto"></p>
-                <p><label for="iemail">E-mail:</label> <input type="email" name="email" id="iemail"></p>
-                <p>Mensagem: </p><textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
-                <button>enviar</button>
+
+            <form action="https://api.staticforms.xyz/submit" method="POST">
+                <label for="itexto" id="nome">Nome:</label> <input type="text" name="email" id="itexto" placeholder="Nome"
+                    autocomplete="on" required>
+                <label for="iemail" id="email">E-mail:</label> <input type="email" name="email" id="iemail"
+                    placeholder="exemplo@gmail.com" autocomplete="on" required>
+                <label for="imsg" id="msg">Mensagem:</label><textarea name="email" id="imsg"
+                    placeholder="Sua mensagem..." required></textarea>
+                <button type="submit">Enviar</button>
+                <input type="hidden" name="accessKey" value="98e25b4a-979d-44ea-8649-7c2e1103da3d">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index/index.html">
             </form>
+
+            
         </section>
 
     </main>
@@ -145,32 +153,6 @@
                 alt=""></a>
     </div>
 </body>
-<script>
-    function clickMenu() {
-        if (itens.style.display == 'block') {
-            itens.style.display = 'none'
-            burguer.innerHTML = 'menu'
-            burguer.style.background = '#1336fc'
-            burguer.style.color = '#ffffff'
-            burguer.style.border = 'none'
-
-        } else {
-            itens.style.display = 'block'
-            burguer.innerHTML = 'close'
-            burguer.style.background = 'white'
-            burguer.style.color = '#1336fc'
-            burguer.style.border = 'solid 2px #1336fc'
-
-        }
-    }
-    function tela(){
-        if(window.innerWidth >= 768){
-            itens.style.display = 'block'
-        }else{
-            itens.style.display = 'none'
-        }
-    }
-
-</script>
+<script src="../script/script.js"></script>
 
 </html>

@@ -73,6 +73,7 @@ header>div {
     transition: .2s;
     background-color: #5a72fc;
     color: white;
+    transition: .2s;
 }
 
 /* informacao */
@@ -81,18 +82,20 @@ section#informacao {
     padding-top: 35px;
     background-image: url(../imagens/DALL·E\ 2023-02-07\ 23.18.50\ -\ imagem\ tecnologia\ em\ azul\ em\ 1080p.png);
     filter: opacity(100%);
+    transition: .2s;
 }
 
-section#informacao>img#minhaImagem {
+section#informacao>div>img#minhaImagem {
     border-radius: 10px 10px 0px 0px;
     width: 324px;
     height: 300px;
     display: block;
     margin: 0 auto;
     filter: grayscale(100%);
+    transition: .2s;
 }
 
-#informacao>div#divInfo {
+#informacao>div>div#divInfo {
 
     padding-top: 10px;
     background-color: white;
@@ -100,23 +103,27 @@ section#informacao>img#minhaImagem {
     height: 280px;
     display: block;
     margin: 0 auto;
+    transition: .2s;
 }
 
-#informacao>div#divInfo>h1 {
+#informacao>div>div#divInfo>h1 {
     font-weight: bolder;
     text-align: center;
     font-size: 1.4em;
+    transition: .2s;
 }
 
-#informacao>div#divInfo>h2 {
+#informacao>div>div#divInfo>h2 {
     text-align: center;
     font-size: 1em;
     margin-bottom: 10px;
+    transition: .2s;
 }
 
-#informacao>div#divInfo>h3,
-#informacao>div#divInfo>p {
+#informacao>div>div#divInfo>h3,
+#informacao>div>div#divInfo>p {
     margin-left: 40px;
+    transition: .2s;
 }
 
 /* redes sociais */
@@ -127,6 +134,7 @@ section#informacao>img#minhaImagem {
     display: block;
     margin: 0 auto;
     border-radius: 0px 0px 10px 10px;
+    transition: .2s;
 }
 
 #informacao>div#sociais>a {
@@ -231,7 +239,7 @@ button:hover {
 }
 
 input {
-    background-color: #ffffff;
+    background-color: #b0bcfc;
     width: 300px;
     padding: 10px;
     border: #000e5e 2px solid;
@@ -330,10 +338,73 @@ div#sociais>p {
         border-bottom: 0px black solid;
     }
 
+    /* informacao */
+
+    section#informacao {
+        height: 300px;
+        transition: .2s;
+    }
+
+    section#informacao>div {
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        transition: .2s, ;
+    }
+
+    section#informacao>div>img#minhaImagem {
+        border-radius: 10px 0px 0px 0px;
+        margin-right: 0px;
+        transition: .2s, ;
+    }
+
+    #informacao>div>div#divInfo {
+        margin-left: 0px;
+        height: 290px;
+        border-radius: 0px 10px 0px 0px;
+        transition: .2s;
+    }
+
+    /* redes sociais */
+    #informacao>div#sociais {
+        background-color: #0022e6;
+        width: 649px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    #informacao>div#sociais>a {
+        display: inline-block;
+        margin: auto;
+    }
+
+    #informacao>div#sociais>a>img {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 35px;
+    }
+
+    #informacao>div#sociais>a>img#wpp {
+        margin-left: 10px;
+    }
+
+    /* apresentacao */
+    section#apresentacao {
+        padding: 70px;
+        text-align: center;
+        background-color: rgb(235, 232, 232);
+        padding-bottom: 60px;
+    }
+
+    section#apresentacao>h1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
     /* form */
-form > label{
-    font-size: 1.3em;
-}
+    form>label {
+        font-size: 1.3em;
+    }
+
     input {
         background-color: #b0bcfc;
         width: 600px;

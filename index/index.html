@@ -10,7 +10,7 @@
     <title>Meu portifólio</title>
 </head>
 
-<body>
+<body onresize="tela()">
     <header>
         <div>
             <h1><strong>Caio V.Azeredo</strong></h1>
@@ -113,6 +113,14 @@
                 <li>Pacote Office</li>
                 <li>Sistema operacional Windows</li>
             </ul>
+            <h1>CONTATO</h1>
+            <hr>
+            <form action="#">
+                <p><label for="itexto">Nome:</label> <input type="text" name="texto" id="itexto"></p>
+                <p><label for="iemail">E-mail:</label> <input type="email" name="email" id="iemail"></p>
+                <p>Mensagem: </p><textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                <button>enviar</button>
+            </form>
         </section>
 
     </main>
@@ -143,7 +151,7 @@
             itens.style.display = 'none'
             burguer.innerHTML = 'menu'
             burguer.style.background = '#1336fc'
-            burguer.style.color = 'black'
+            burguer.style.color = '#ffffff'
             burguer.style.border = 'none'
 
         } else {
@@ -153,6 +161,13 @@
             burguer.style.color = '#1336fc'
             burguer.style.border = 'solid 2px #1336fc'
 
+        }
+    }
+    function tela(){
+        if(window.innerWidth >= 768){
+            itens.style.display = 'block'
+        }else{
+            itens.style.display = 'none'
         }
     }
 

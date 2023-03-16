@@ -1,7 +1,7 @@
 const itens = document.querySelector("#itens")
 const burguer = document.querySelector("#burguer")
 function click() {
-    document.addEventListener("click", (e) => {
+    document.addEventListener('click', (e) => {
         const el = e.target
         if (el.classList.contains('material-icons')) {
 
@@ -21,6 +21,11 @@ function click() {
 
             }
         }
+
+        if (el.classList.contains('button')) {
+            alert('MUITO OBRIGADO POR MANDAR A SUA MENSAGEM')
+        }
+
     })
 
 }

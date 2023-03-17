@@ -316,26 +316,71 @@ div#sociais>p {
 
 /* TABLET */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px)
+
+/* and (max-width: 1222px) */
+    {
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    header>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        margin-bottom: 0px;
+        margin: 0px;
+        display: block;
+        margin: 0 right;
+        margin-left: 15px;
+
+    }
+
+    header>div>h1 {
+        display: block;
+        margin: 0 auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
     #burguer {
         display: none;
     }
 
     #itens {
-        background-color: #2243ff;
-        text-align: center;
+        background-color: #ffffff;
+        text-align: right;
         display: block;
-        margin: 0 auto;
+        margin: 0 right;
+        width: 615px;
+    }
+
+    #itens>ul>li>a:hover {
+        transition: 0.5s;
+        background-color: #0022e6;
     }
 
     #itens>ul>li {
+
         display: inline-block;
         border-bottom: 0px;
+        margin-right: 10px;
     }
 
     #itens>ul>li>a {
+        font-size: 1em;
+        padding: 20px;
+        background-color: #ffffff;
+        color: #000e5e;
         display: inline-block;
-        border-bottom: 0px black solid;
+        border-bottom: 0px;
     }
 
     /* informacao */

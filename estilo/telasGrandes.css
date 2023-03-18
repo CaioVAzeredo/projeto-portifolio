@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media  screen and (min-width: 1025px) and (max-width: 1200px) {
+@media  screen and (min-width: 1025px) {
 
     header {
 
@@ -100,7 +100,7 @@
     /* redes sociais */
     #informacao>div#sociais {
         background-color: #0022e6;
-        width: 649px;
+        width: 849px;
         border-radius: 0px 0px 10px 10px;
     }
 
@@ -130,6 +130,16 @@
     section#apresentacao>h1 {
         margin-top: 30px;
         margin-bottom: 20px;
+    }
+    section#apresentacao>p{
+        display: block;
+        margin: 0 auto;
+        width: 650px;
+    }
+    section#curriculo > ul{
+        display: block;
+        margin: 0 auto;
+        width: 900px;
     }
 
     /* form */

@@ -8,8 +8,8 @@
     color: #000e5e;
 }
 
-hr {
-    color: #000e5e;
+html{
+    scroll-behavior: smooth;
 }
 
 header>div>h1 {

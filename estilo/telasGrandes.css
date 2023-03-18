@@ -39,14 +39,16 @@
         text-align: right;
         display: block;
         margin: 0 right;
-        width: 615px;
+        width: 640px;
     }
 
     #itens>ul>li>a:hover {
         transition: 0.5s;
         background-color: #0022e6;
     }
-
+    header>div>h1 {
+        transition: .2s;
+    }
     #itens>ul>li {
 
         display: inline-block;

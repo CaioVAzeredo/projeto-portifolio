@@ -356,7 +356,16 @@ div#sociais>p {
         text-align: right;
         display: block;
         margin: 0 right;
-        width: 615px;
+        width: 555px;
+    }
+
+    header>div>h1 {
+        font-size: 1.4em;
+        transition: .2S;
+    }
+
+    #itens>ul>li {
+        font-size: 0.8em;
     }
 
     #itens>ul>li>a:hover {

@@ -91,7 +91,7 @@ section#informacao>div>img#minhaImagem {
     height: 300px;
     display: block;
     margin: 0 auto;
-    filter: grayscale(100%);
+    
     transition: .2s;
 }
 

@@ -120,8 +120,21 @@
             </ul>
             <h1 id="contato">CONTATO</h1>
             <hr>
-
-            <form action="https://api.staticforms.xyz/submit" method="POST">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="98e25b4a-979d-44ea-8649-7c2e1103da3d">
+                <label for="itexto" id="nome">Nome:</label>
+                <input type="text" name="name" placeholder="Nome">
+                <label for="iemail" id="email">E-mail:</label>
+                <input type="text" name="email" placeholder="exemplo@email.com" />
+                <label for="imsg" id="msg">Mensagem:</label>
+                <textarea name="message" placeholder="Sua mensagem aqui.."></textarea>
+                <input type="text" name="honeypot" style="display:none">
+                <input type="hidden" name="subject" value="Contact us from - example.com" />
+                <input type="hidden" name="replyTo" value="@">
+                <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+                <button type="submit" class="button">Enviar</button>
+            </form>
+            <!-- <form action="https://api.staticforms.xyz/submit" method="POST">
                 <label for="itexto" id="nome">Nome:</label> <input type="text" name="email" id="itexto"
                     placeholder="Nome" autocomplete="on" required>
                 <label for="iemail" id="email">E-mail:</label> <input type="email" name="email" id="iemail"
@@ -131,7 +144,7 @@
                 <button type="submit" class="button">Enviar</button>
                 <input type="hidden" name="accessKey" value="98e25b4a-979d-44ea-8649-7c2e1103da3d">
                 <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index/index.html">
-            </form>
+            </form> -->
         </section>
 
     </main>
